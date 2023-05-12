@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>Menú</title>
+        <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, use-r-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">     
+    <title>Cuestionarios</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $('.sub-btn').click(function(){
+              $(this).next('.sub-menu').slideToggle();
+              $(this).find('.dropdown').toggleClass('rotate');
+          });
+          $('.menu-btn').click(function(){
+          $('.side-bar').addClass('active');
+          $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function(){
+          $('.side-bar').removeClass('active');
+          $('.menu-btn').css("visibility", "visible");
+      });
+  });
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Qrgj8GKf6oW9lcwSotVzKTYHlaZt2Jt1j/9ytcNnN2KZgNzcYV/B0RhhYXOg2v7pMKiJXl3+tNJPz9wM3M+dEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<header>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="menu-btn arribita">
+    <i class="fas fa-bars"></i>
+  </div>
+  <div>
+    <img src="img/busy.png" class="busy">
+  </div>
+  <div>
+    <input  class="user" type="image" src="img/user.png" >
+</div>
+</div>
+
+
+
+  <div class="side-bar">
+    <div class="close-btn">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="menu">
+      <div class="item"> 
+        <div class="item"> <a href="inicio.html"> <i class="fas fa-search"></i>Descubrir</a></div>
+        <div class="item"> <a href="inicio.html"> <i class="fas fa-table"></i>Mis negocios</a></div>
+        <div class="item"> <a href="inicio.html"> <i class="fas fa-info"></i>Sobre nosotros</a></div>
+        <a class="sub-btn"> <i class="fas fa-user"></i> Mi perfil <i class="fas fa-angle-right dropdown"></i></a>
+        <div class="sub-menu">
+          <a href="Inicio/inicio.html" class="sub-item">Iniciar sesión</a>
+          <a href="#" class="sub-item">Crear cuenta</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <body> 
+    <main>
+    
+
+    <section class="contenedor-main">
+      <div style="text-align: center">
+        <div class="title">
+          <h1 class="descubrir"> Descubramos </h1>
+        </div>
+        <hr>
+        <div class="buscador-wrap">
+          <i class="fas fa-search buscador-icon"></i>
+          <input type="text" name="buscador" class="buscador2" id="buscador" placeholder="Buscar negocios" style="text-align:center;">
+        </div>
+
+        <br>
+        <select name="del" class="del">
+          <option value="1">Delegación</option>
+        </select>
+
+        <select name="col" class="col">
+          <option value="2">Colonia</option>
+        </select>
+
+        <select name="cat" class="cat">
+          <option value="3">Categoría</option>
+        </select>
+        <br>
+        
+
+
+      </div>
+    </section>
+
+    
+
+
+   
+       
+    
+    <script src=" http://code.jquery.com/jquery-latest.js"></script>
+</main>
+</body>
+</html>
